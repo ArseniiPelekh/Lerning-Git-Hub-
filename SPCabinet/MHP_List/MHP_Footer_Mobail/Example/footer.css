@@ -1,0 +1,125 @@
+html {
+    font-size: 62.5%;
+}
+
+.footerMobail {
+
+    display: none;
+
+    position: fixed;
+    height: 56px;
+    left: 0; bottom: 0;
+    padding: 10px; 
+    color: #fff; 
+    width: 100%; 
+
+    vertical-align: middle;
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #00000029;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px 4px 0px 0px;
+    opacity: 1;
+
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.blockDownMobail{
+    position: relative; 
+    width: 100%;
+    display: flex;
+}
+
+.footerMobail input:checked {
+    background: #0F3D5B 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#signButton {
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 16px 9px;
+    text-decoration: none;
+
+    width: 24px;
+    height: 24px;
+
+    background: #0F3D5B 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 3px #00000033;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+.footerMobail a#signatureLink:hover{
+    background-color: #1C587A;
+}
+
+.checkButtonBlock{
+    width: 63%;
+    vertical-align: middle;
+    
+}
+
+.actionsButtonSpan {
+    width: 37%;
+    text-align: right;
+}
+
+.actionButton {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+
+
+#deleteButton{
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAQFJREFUSEvtldENgkAQRGcT9lutQDrQDtQS7MASMGGruEukBDuwBC3BFqxA/D4SzBo1gCAIMcHE+7qEu3mzc7uB8OVFX9ZHvwAikmrFxpjGxhofVOE/oLah/hG9RCQi0zRNN0mSLKMoirMRBUEw9DxvR0RrY8yxKt+3bSoiBwAzAEfn3IKZzyrknBsx8x6AGjhZa/1GgOIj3l0eiGiiEBW8Cz32FwDzRwVlTZCroOxAAZI1mhOvGsRagF4sgbyIdwIUIJr3M5ZsSa0iygpoJczsV3VNZ0DdqPcCEAMY1Dl99704F7kuCsNwDmBLROM2EBUHsLLW6oDe1kc/nDbQ3wdcAcjApxlnDyFKAAAAAElFTkSuQmCC");
+    margin-right: 16px;
+}
+
+#printButton{
+    background-image: url("outline-local_printshop-24px.png");
+    margin-right: 12px;
+}
+
+#saveButton {
+    background-image: url("baseline-save_alt-24px.png");
+    margin-right: 12px;
+}
+
+#checkboxFooter {
+    display: none;
+}
+
+#checkboxFooter + label::before {
+
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    background-image: url("selectionControl-Checkbox-On-notactive.png");
+    margin: 4px 5% 0px 6%;
+    opacity: 1;
+
+}
+  
+#checkboxFooter:checked + label::before {
+    width: 24px;
+    height: 24px;
+    content: '';
+    background-image: url("selectionControl-Checkbox-On-Enabled.png");
+    border: none;
+    margin: 4px 5% 0px 6%;
+}
+
+@media screen and (max-width: 800px) {
+    .footerMobail {
+        display: flex;
+    } 
+}
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+
+        .filterTxt { 
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #E0E0E0;
+            border-radius: 4px;
+            opacity: 1;
+            height: 28px;
+        }
+        
+        .quickSearch.filter>a.refreshImg {
+        
+            height: 14px;
+        }
+        
+
+        /* mobail */
+        @media screen and (max-width: 800px) {
+            .filterTxt { 
+                width: 83%!important;
+            }
+
+            .filterChosen.filter {
+                margin-left: 1rem!important;
+                display: none!important;
+            }
+
+            /* .filterChosen.filter span.filterLabel {
+                display: none!important;
+            } */
+
+            .quickSearch.filter {
+                margin-left: 1rem!important;
+                display: flex!important;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            
+            .quickSearch.filter span.filterLabel {
+                width: 100%;
+            }
+
+            a[title='Apply quick search'] {
+                margin-right: 10px;
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            a[title='Apply quick search'] {
+                display: none;
+            }
+        }
+
+
+        @media screen and (max-width: 800px) {
+
+            .grid-toolbars .SFC.SourceCode-Forms-Controls-Web-Table {
+                    /* display: inline-table;*/
+                    display: contents!important;
+            }
+
+            .grid-toolbars .SFC.SourceCode-Forms-Controls-Web-Table tr{
+                margin-left: 1rem!important;
+                display: grid;
+                align-items: center;
+                /* justify-content: center; */
+                flex-wrap: inherit;
+                /* width: 96%; */
+                margin-right: 1rem!important;
+                /* margin-right: 1rem;*/
+            }
+            .grid-toolbars .SFC.SourceCode-Forms-Controls-Web-Table tr>td{
+                width: 100%;
+                display: contents;
+            }
+
+            .grid-toolbars .SFC.SourceCode-Forms-Controls-Web-Table tr>td .input-control.select-box.dropdown-box {
+                width: 100%!important; 
+            }
+        }
+
+    </style>
+        
+        <style>
+        
+        .filterTxt{ 
+            
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #E0E0E0;
+            border-radius: 4px;
+            opacity: 1;
+            height: 26px;
+            border-right: none;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+         
+        
+        a[title='Apply quick search'] {
+            border: 1px solid #E0E0E0;
+            height: 14px;
+            border-left: none;
+            border-radius: 4px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }   
+        
+        
+        </style>
+

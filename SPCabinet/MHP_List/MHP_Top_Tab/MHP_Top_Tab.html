@@ -1,0 +1,87 @@
+<script>
+    $(document).ready(() => {
+
+        /* Add style (hover to bottun ) in head */
+
+        /* All hover
+        <style>
+            #btn_AddDocument_MHP:hover, 
+            #signButton:hover, 
+            a[time='Apply quick search']:hover,
+            a[name='btnEdit']:hover,
+            a[name='btnCancel']:hover,
+            a[name='btnSave']:hover { background-color:#1C587A!important;} 
+        </style>        
+        */
+
+        $("head").append("<style> #btn_AddDocument_MHP:hover, #signButton:hover, a[time='Apply quick search']:hover,a[name='btnEdit']:hover,a[name='btnCancel']:hover,a[name='btnSave']:hover { background-color:#1C587A!important;}   </style> ")
+
+        /* Add bottun for donload document */
+        $(".runtime-content .tab-box-tabs").append("<li style='line-height: 3.7rem;float: right;'><a href='#' id='btn_AddDocument_MHP'>ЗАВАНТАЖИТИ ДОКУМЕНТ</a></li>")
+
+        $("#btn_AddDocument_MHP").click(() => { $("a[name='btn_AddDocument'").click(); });
+
+        $("#btn_AddDocument_MHP").css("display", ($(window).width() <= '995') ? "none" : "inline");
+
+        $(".runtime-content .tab-box-tabs li").each((liIndex, liValue) => {
+            $(liValue).click(() => {
+                if (liIndex === 0 || liIndex === 3) {
+                    $('#btn_AddDocument_MHP').css('display', 'inline');
+                    return;
+                }
+                $('#btn_AddDocument_MHP').css('display', 'nane');
+            });
+        });
+    });
+
+</script>
+
+
+
+<style>
+    #btn_AddDocument_MHP {
+        margin-right: 1rem;
+        font-size: 14px;
+        color: #fff;
+        padding: 10px 16px 9px;
+        text-decoration: none;
+        width: 24px;
+        height: 24px;
+        background: #0F3D5B 0% 0% no-repeat padding-box;
+        box-shadow: 0px 1px 3px #00000033;
+        border-radius: 4px;
+        opacity: 1;
+    }
+
+    @media screen and (max-width: 925px) {
+        
+        #btn_AddDocument_MHP {
+            display: none!important;    
+        }
+
+        
+        /* backgraud-color: */
+
+        .tab-box.tabs-top,
+        .runtime-content .tab-box-tabs li .tab.selected {
+            background-color: #FAFAFA !important;
+        }
+
+        /* end */
+
+        .runtime-content .tab-box-tabs {
+            text-align: center;
+        }
+    }
+
+    .runtime-content .tab-box-tabs {
+        z-index: 1;
+    }
+
+    @media screen and (min-width: 925px) {
+        .runtime-content .tab-box-tabs li span {
+            width: 240px;
+            text-align: center;
+        }
+    }
+</style>

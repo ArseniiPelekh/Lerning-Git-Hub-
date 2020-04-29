@@ -1,0 +1,142 @@
+<style>
+    @media screen and (max-width: 925px) {
+        /* backgraud-color: */
+
+        .theme-entry .grid table.grid-content-table {
+            background-color: #FAFAFA;
+        }
+        
+        /* end */
+
+        /* Change rows sort string */
+
+        .grid-column-headers {
+            display: none;
+        }
+
+        /* Change rows in list table */
+
+        .grid-content-table td {
+            display: block;
+            width: 100%;
+        }
+
+        .theme-entry .grid table.grid-content-table>tbody>tr,
+        .theme-entry .grid table.grid-content-table>tr {
+            
+            display: flex;
+            flex-flow: wrap;
+            
+            cursor: default;
+            height: 100%;
+            width: 100vw;
+            border-radius: 4px;
+            margin-top: 8px;
+            border: 1px solid #E0E0E0;
+
+            background-color: white;
+        }
+
+        /* end */
+    }
+</style>
+
+<style>
+
+    /* Mobail */
+
+    /* Change List columns to blocks*/
+
+    @media screen and (min-width: 926px) {
+        div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(1) .grid-content-cell {
+            width: 25px;
+            margin-left: 28px;
+        }
+
+        div[name='GetDocumentsList'] .grid-body .grid-column-header-table tr {
+            background-color: white;
+        }
+    }
+
+    @media screen and (max-width: 925px) {
+        div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(1) {
+            width: 4.8rem;
+            display: inline-block;
+            padding-top: 2px;
+            height: 51px;
+
+            order: 1;
+        }
+
+        div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(1) .grid-content-cell-wrapper {
+            padding-top: 0px !important;
+        }
+
+        div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(2) {
+            width: 85%;
+            display: inline-block;
+            height: 51px;
+
+            order: 2;
+        }
+
+        div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(2) span {
+            font-size: 20px;
+        }
+
+        div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(2) span,
+        div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(2) .grid-content-cell-wrapper {
+            padding-left: 0;
+            padding-top: 0.4rem;
+        }
+
+        div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(3)
+        {
+            order: 3;
+            display: none;
+        }
+
+        div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(4)
+        {
+            order: 4;
+
+            width: 34%;
+            display: inline-block;
+        }
+
+        div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(5)
+        {
+            order: 5;
+
+            width: 66%;
+            display: inline-block;
+        }
+
+        div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(6)
+        {
+            order: 6;
+        }
+
+        div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(7)
+        {
+            order: 3;
+        }
+
+        div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(8)
+        {
+            order: 8;
+        }
+
+
+        div[name='GetDocumentsList'] .grid-body .grid-body-content tr td .grid-content-cell-wrapper {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        /* The place for Footer */
+        div[name='GetDocumentsList'] .grid-footer {
+            padding-bottom: 38px;
+        }
+        
+    }
+</style>

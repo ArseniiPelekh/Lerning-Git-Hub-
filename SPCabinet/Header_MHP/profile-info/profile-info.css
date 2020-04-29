@@ -1,0 +1,110 @@
+  /*#region common styles*/
+  /* * {
+    font-size: 14px;
+  } */
+
+  .header-user-active {
+    background: #e3eff2 0% 0% no-repeat padding-box;
+  }
+  /*#endregion */
+
+  /*#region user-info part styles*/
+
+  .header-user-control {
+    height: 72px;
+    width: fit-content;
+
+    /* display: flex;
+    align-items: center; */
+
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .header-user-user-area {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .header-user-info {
+    margin-right: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .header-user-code {
+    text-align: left;
+    letter-spacing: 0.1px;
+    color: #000000de;
+
+    float: right;
+  }
+  .header-user-name {
+    text-align: left;
+    letter-spacing: 0.25px;
+    color: #000000de;
+    opacity: 0.6;
+
+    float: right;
+  }
+  .header-user-img-place {
+    width: 40px;
+    height: 40px;
+    background: #0f3d5b 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+
+    margin-left: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-user-image {
+    width: 24px;
+    height: 24px;
+    /* background: transparent url("img/baseline-person-24px.png") 0% 0% no-repeat
+      padding-box; */
+  }
+
+  /*#endregion */
+
+  /*#region dropdown part styles*/
+
+  .header-user-dropdown {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 8px #0000003d;
+    border: 1px solid #ffffffcc;
+    border-radius: 4px;
+
+    display: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .header-user-dropdown-item {
+    height: 40px;
+
+    padding: 8px 12px;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .header-user-dropdown-item:hover {
+    background: #e3eff2 0% 0% no-repeat padding-box;
+  }
+
+  .header-user-dropdown-item-image {
+    width: 24px;
+    height: 24px;
+  }
+  .header-user-item-name-place {
+    margin-left: 32px;
+  }
+  .header-user-item-name-place label {
+    text-align: left;
+    letter-spacing: 0.1px;
+    color: #212121;
+  }
+
+  /*#endregion */

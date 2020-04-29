@@ -1,0 +1,171 @@
+<script>
+
+    ($("#signButton").click(() => {
+        $("a[name='btn_Sign']").click();
+    }));
+
+
+    ($("#deleteButton").click(() => {
+        $("a[name='btn_Delete']").click();
+    }));
+
+    const signButton = () => {
+        $("a[name='btn_Sign']").click();
+    }
+
+    const deleteButton = () => {
+        $("a[name='btn_Delete']").click();
+    }
+                
+</script>
+
+<style>
+    
+    @media screen and (max-width: 800px) {
+
+        a[name~="btn_Sign"] {
+            display: none!important;
+        }
+
+        a[name~='btn_Delete'] {
+            display: none!important;
+        }
+
+        a[name~='btn_AddDocument'] {
+            color: #ffff!important;
+            background-color: #0F3D5B!important;
+            border-radius: 4px!important;
+        }
+    }
+
+</style>
+
+
+<script>
+
+    $(document).ready(function () {
+
+        
+        const checkedAllInList = () => {
+
+            let checkboxs = ($(".grid-content-table:first").find("tr"));
+            let checkboxFooter = ($("#checkboxFooter"));
+
+            ($(checkboxFooter).click(() => {
+
+                ($.each(checkboxs, (trIndex, trValue) => {
+                    if ($(checkboxFooter).is(":checked")) {
+                        if ($(trValue).find("label[class='input-control checkbox checked']").length == 0) {
+                            $(trValue).click();
+                        }
+                    } else {
+                        if ($(trValue).find("label[class='input-control checkbox checked']").length == 1) {
+                            $(trValue).click();
+                        }
+                    }
+                }));
+            }));
+        }
+
+        function moveInterval() {
+
+            let intervalForSetEventToList = setInterval(bindEventToSheetRows, 200);
+
+            const bindEventToSheetRows = () => {
+
+                if ($(".grid-content-table:first").find(".first.center-align").length === 0) {
+                    console.log("0!");
+                } else {
+                    clearInterval(intervalForSetEventToList);
+                    $(".grid-content-table:first").find("tr").each((trIndex, trValue) => {
+                        $(trValue).click(() => {
+                            if($(trValue).find("label[class='input-control checkbox checked']")) {
+                                $(trValue).css("background-color", "rgba(0, 0, 0, 0)");
+                            } else {
+                                $(trValue).css("background-color", "rgb(227, 239, 242)");
+                            }
+                        });
+                    });
+                    checkedAllInList();
+                    console.log("ready!");
+                }
+            }
+        }
+
+        moveInterval()
+    });
+
+</script>
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<script>   
+
+    ($("#signButton").click(() => 
+        { $("a[name='btn_Sign']").click(); 
+    })); 
+    
+    ($("#deleteButton").click(() => 
+        { $("a[name='btn_Delete']").click(); 
+    }));  
+    
+</script>
+
+
+<script>  
+        $(document).ready(function () {
+
+    
+            const checkedAllInList = () => {
+
+                let checkboxs = ($(".grid-content-table:first").find("tr"));
+                let checkboxFooter = ($("#checkboxFooter"));
+
+                ($(checkboxFooter).click(() => {
+
+                    ($.each(checkboxs, (trIndex, trValue) => {
+                        if ($(checkboxFooter).is(":checked")) {
+                            if ($(trValue).find("label[class='input-control checkbox checked']").length == 0) {
+                                $(trValue).click();
+                            }
+                        } else {
+                            if ($(trValue).find("label[class='input-control checkbox checked']").length == 1) {
+                                $(trValue).click();
+                            }
+                        }
+                    }));
+                }));
+            }
+
+            function moveInterval() {
+
+                let intervalForSetEventToList = setInterval(bindEventToSheetRows, 200);
+
+                function bindEventToSheetRows() {
+
+                    if ($(".grid-content-table:first").find(".first.center-align").length === 0) {
+                        console.log("0!");
+                    } else {
+                        clearInterval(intervalForSetEventToList);
+                        $(".grid-content-table:first").find("tr").each((trIndex, trValue) => {
+                            $(trValue).click(() => {
+                                if ($(trValue).find("label[class='input-control checkbox checked']").length !== 0) {
+                                    $(trValue).css("background-color", "rgba(0, 0, 0, 0)");
+                                } else {
+                                    $(trValue).css("background-color", "rgb(227, 239, 242)");
+                                }
+                            });
+                        });
+                        checkedAllInList();
+                        console.log("ready!");
+                    }
+                }
+            }
+
+            moveInterval()
+        });
+
+</script>
+
+<script src="Runtime/Script/MHPCustomScripts/MHPScripts.js"></script>

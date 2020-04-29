@@ -1,0 +1,248 @@
+<style>
+
+    /*input text filete*/
+
+    .filterTxt { 
+        width: 340px!important;
+        height: 26px;
+        margin-right: 4px!important;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #E0E0E0;
+        border-radius: 4px;
+        opacity: 1;
+    }
+
+    a[title='Apply quick search'] {
+        margin: 0!important;
+
+        background-color: #0F3D5B!important;
+
+        border-radius: 4px!important;
+
+        margin-left: auto!important;
+    }
+
+    /* end input text filete*/
+
+    a[name="btn_Sign"] {
+            display: none !important;
+        }
+
+    a[name='btn_Delete'] {
+        display: none !important;
+    }
+
+    /* Dorp down list */
+    
+    .input-control.select-box.dropdown-box {
+        width: 200px !important;
+    }
+
+    .input-control.select-box.dropdown-box .input-control-body.styling-left.styling-inner-wrapper .input-control-m-c {
+        border-bottom-color: transparent;
+    }
+
+    .input-control.select-box.dropdown-box .input-control-body.styling-left.styling-inner-wrapper .input-control-m-c span {
+        font-size: 16px;
+        font-style: normal;
+        letter-spacing: 0.15px;
+        color: #212121;
+    }
+
+    .input-control.select-box.dropdown-box .input-control-buttons.styling-right.styling-inner-wrapper {
+        border-bottom-color: transparent;
+        width: 70px;
+    }
+
+    /* end Dorp down list*/
+
+    /* hidden Speed Serch for list*/
+
+    div[name='GetDocumentsList'] .grid-toolbars .toolbars.double div.toolbar:nth-child(2) .quickSearch.filter .filterLabel,
+    div[name='GetDocumentsList'] .grid-toolbars .toolbars.double div.toolbar:nth-child(2) .quickSearch.filter .searchDdl {
+        display: none!important;
+    }
+
+    td[name="Cell Cell116"] span[name='Label'] {
+        display: none;
+    }
+
+
+    /* min 926px */
+
+    @media screen and (min-width: 926px) {
+
+        div[name='GetDocumentsList'] .grid-toolbars .toolbars.double {
+            display: flex!important;
+        }
+        
+        div[name='GetDocumentsList'] .grid-toolbars .toolbars.double div.toolbar {
+            width: 50%;
+        }
+
+        div[name='GetDocumentsList'] .grid-toolbars .toolbars.double div.toolbar:nth-child(2) {
+
+            order: -1;
+            
+            width: auto;
+            display: flex;
+            align-items: center;
+
+            margin-right: 56px;
+        }        
+        
+        div[name='GetDocumentsList'] .grid-toolbars .toolbars.double div.toolbar:nth-child(2) .toolbar-wrapper {
+            margin-left: 1rem!important;
+        }
+
+        /* td change*/
+
+        td[name="Cell Cell117"] {
+            display: none;
+        }
+
+        td[name="Cell Cell116"] {
+            text-align: left!important;
+            display: grid;
+            padding: 0 1.5rem 0 0!important;
+            height: 55px!important;
+
+            width: 100%!important;
+        }
+
+        td[name="Cell Cell116"] span[name='Label'] {
+            display: none;
+        }
+    }
+
+
+
+    /* end */
+
+
+    /* mobail */
+    
+    @media screen and (max-width: 925px) {
+        /* backgraud-color toolbar*/
+
+        div[name='GetDocumentsList'] .grid-toolbars .toolbars.double div.toolbar,
+        div[name='GetDocumentsList'] .grid-toolbars .toolbars.double table, 
+        div[name='GetDocumentsList'] .grid-toolbars .toolbars.double div.toolbar .toolbar-wrapper {
+            background-color: #FAFAFA;
+        }
+
+        /* end */
+
+        a[name~='btn_AddDocument'] {
+
+            margin-right: 0!important;
+
+            display: block!important;
+            color: #ffff!important;
+            background-color: #0F3D5B!important;
+            border-radius: 4px!important;
+            min-height: 36px!important;
+            line-height: 36px!important;
+            margin-left: 0!important;
+        }
+    }
+
+
+    @media screen and (max-width: 925px) {
+
+
+        div[name='GetDocumentsList'] .formpanel .form .row:nth-child(1) {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 925px) {
+
+        
+    /*input text filete for mobail*/
+        
+        .filterContainer {
+            display: flex;
+        }
+        
+        .filterTxt {
+            width: 84%!important;
+        }
+
+        .filterChosen.filter {
+            margin-left: 1rem!important;
+            display: none!important;
+        }
+
+        .quickSearch.filter {
+            width: 100%;
+            justify-content: left!important;
+            
+            margin-left: 0rem!important;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .quickSearch.filter span.searchDdl {
+            max-width: 100%!important;
+            margin-right: 1rem!important;
+        }
+
+        .quickSearch.filter span.filterLabel {
+            width: 100%;
+        }
+    
+    }
+
+    /* end */
+
+    /* hiden line in list block for mobail*/
+
+    .grid-toolbars .SFC.SourceCode-Forms-Controls-Web-Table tr>td:nth-child(1),
+    .grid-toolbars .SFC.SourceCode-Forms-Controls-Web-Table tr>td:nth-child(3){
+        display: none;
+    }
+
+
+    @media screen and (max-width: 925px) {
+
+        /* change line in block for mobail*/
+
+        .grid-toolbars .SFC.SourceCode-Forms-Controls-Web-Table {
+
+                display: contents!important;
+        }
+
+        .grid-toolbars .SFC.SourceCode-Forms-Controls-Web-Table tr{
+            display: grid;
+            align-items: center;
+
+            flex-wrap: inherit;
+
+            margin-right: 0rem!important;
+            margin-left: 0rem!important;
+        }
+    
+        .grid-toolbars .SFC.SourceCode-Forms-Controls-Web-Table tr>td {
+            width: 100%;
+            padding: 0; 
+        }
+        
+        .grid-toolbars .SFC.SourceCode-Forms-Controls-Web-Table tr>td:nth-child(2) {
+            height: auto;
+            width: 94vw!important;
+        }
+    }
+
+    .toolbar-wrapper {
+        margin-left: 1rem;
+    }
+
+    #btn_AddDocument_MHP {
+        display: none;
+    }
+
+</style>
+
+

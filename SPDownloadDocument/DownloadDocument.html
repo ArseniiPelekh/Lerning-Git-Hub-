@@ -1,0 +1,231 @@
+<style>
+  :root {
+    --main-bg-color: #E3EFF2;
+    --button-bg-color: #0F3D5B;
+    --button-bg-color-hover: #1C587A;
+  }
+
+  /*  */
+
+  div[name='Area Item'] {
+    box-shadow: 0 0 0!important;
+  }
+
+  div[name='Area Item'] .panel-toolbars {
+    display: none;
+  }
+
+  /* title */
+  
+  div[name='Area Item'] span[name='Title'].SFC.SourceCode-Forms-Controls-Web-Label {
+    margin-left: 24px;
+
+    text-align: left;
+    letter-spacing: 0.15px;
+    font-size: 20px;
+    font-weight: 600 !important;
+    color: #0f3d5b;
+  
+  }
+
+  /* options button */
+  div[name='Area Item'] .button-dimensions-wrapper {
+    height: 4.8rem;
+  }
+  
+  div[name='Area Item'] .button-dimensions-wrapper .SFC.SourceCode-Forms-Controls-Web-Button {
+    height: 4.8rem;
+
+    background: none;
+    box-shadow: none;
+    border: none;
+
+    outline: none;
+
+    padding-top: .8rem;
+    border-radius: .4rem;
+
+    font-size: 16px !important;
+    font-weight: normal !important;
+    text-align: left;
+  }
+
+  div[name='Area Item'] .button-dimensions-wrapper .SFC.SourceCode-Forms-Controls-Web-Button:hover {
+    background-color: var(--main-bg-color) !important;
+  }
+
+  div[name='Area Item'] .button-dimensions-wrapper .SFC.SourceCode-Forms-Controls-Web-Button:active {
+    background-color: var(--main-bg-color)!important;
+  }
+
+  div[name='Area Item'] .input-control-wrapper.multi-select-outer-panel.borderless.watermark-hidden .stack{
+    padding: 0!important;
+  }
+
+  div[name='Area Item'] .input-control-wrapper.multi-select-outer-panel.borderless.watermark-hidden .multi-select-box-list-item {
+    margin-bottom: 1rem;
+  }
+
+  /* choose document button container */
+  .editor-cell.droptarget .file-info-cell.file-ellipsis {
+    height: 36px !important;
+  }
+
+  /* choose document button */
+
+  div[name='Area Item'] .file-wrapper.showinfo {
+    width: 31.8rem!important;
+    height: 3.6rem!important;
+    border-radius: 4px;
+    background-color: var(--button-bg-color);
+    
+    margin-left: 1rem;
+  }
+
+  div[name='Area Item'] .file-wrapper.showinfo.uploaded{
+    height: 5.6rem!important;
+  }
+  
+  
+  div[name='Area Item'] .file-wrapper.showinfo .file-watermark.file-ellipsis{
+    color: #FFFFFF!important;
+  }
+
+  div[name='Area Item'] .file-wrapper.showinfo .file-info.file-ellipsis {
+    color: #FFFFFF!important;
+  }
+
+  div[name='Area Item'] .file-wrapper.showinfo .file-table {
+    height: 100%!important;
+  }
+  
+  div[name='Area Item'] .file-wrapper.showinfo .file-table .file-info-cell.file-ellipsis {
+    height: 0!important;
+  }
+  
+  div[name='Area Item'] .SFC.SourceCode-Forms-Controls-Web-Label.LabelWrap {
+    
+    width: 31.8rem!important;
+    
+    margin-left: 1rem;
+    margin-top: 1.4rem;
+
+    text-align: left;
+    letter-spacing: 0.4px;
+    color: #757575;
+    opacity: 1;
+
+  }
+
+
+  /* change table column height */
+
+  div[name='Area Item'] .panel-body-m .panel-body-wrapper>div>table tr:nth-child(1) td:nth-child(2) {
+    height: 23.5rem!important;
+  }
+
+  .editor-cell.droptarget .file-label {
+  /*  height: 36px !important;
+    background: #0f3d5b 0% 0% no-repeat padding-box !important;
+    box-shadow: 0px 1px 3px #00000033 !important;
+    border: none !important;
+    border-radius: 4px !important;
+
+    outline: none !important;
+
+    text-align: left !important;
+    font-size: 14px !important;
+    letter-spacing: 0px !important;
+    color: #ffffff !important;
+    box-sizing: border-box !important;
+
+    padding-top: 10px !important;
+    padding-bottom: 9px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+
+    display: inline-block !important;*/
+  }
+</style>
+
+<!--
+<script>
+  $(document).ready(function () {});
+
+  ($("#bfc5cb28-77b7-0b8b-e149-b6300bfdd1dc_33ce4289-cb08-6d96-38f2-1c12ad6b2246_TextBox").keyup(function () {
+        var value = $(this).val();
+        $("input[name='Text Box MHP3']").val(value);
+  }).keyup());
+
+</script>
+-->
+
+<style>
+
+  /* Change select */
+
+  .input-control.select-box.dropdown-box {
+    width: 316px !important;
+    height: 57px !important;
+    margin-bottom: 2.1rem;
+
+  }
+
+  .input-control.select-box.dropdown-box .input-control-body.styling-left.styling-inner-wrapper {
+    height: 100%;
+  }
+
+  .input-control.select-box.dropdown-box .input-control-m-c {
+    border: 1px solid #757575 !important;
+    border-left-color: solid 1px #757575 !important;
+    border-top-color: solid 1px #757575 !important;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+  }
+
+  .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper {
+    margin-top: 16px;
+  }
+
+  .input-control.select-box.dropdown-box .input-control-m-c .input-control-wrapper span {
+    padding-left: 18px;
+    font-size: 16px;
+  }
+
+
+  /* Change button in the select */
+
+  .input-control.select-box.dropdown-box .input-control-buttons.styling-right.styling-inner-wrapper {
+    border: 1px solid #757575 !important;
+    border-top-right-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+    border-left-color: transparent !important;
+    padding-right: 15px;
+  }
+
+  .input-control.select-box.dropdown-box .input-control-buttons.styling-right.styling-inner-wrapper a {
+    
+  }
+
+  div[name='Area Item'] .pure-material-textfield-outlined {
+    margin-bottom: 1.4rem;
+  }
+
+  
+  /*Mobail */
+  @media screen and (max-width: 925px) {
+    
+    div[name='Area Item'] .editor-cell {
+      padding: 0!important;
+    }
+
+    div[name='Area Item'] .pure-material-textfield-outlined {
+    }
+
+    div[name='Area Item'] .SFC.SourceCode-Forms-Controls-Web-Table {
+      text-align: center;
+    }
+
+  }
+
+</style>

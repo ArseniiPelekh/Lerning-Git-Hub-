@@ -1,0 +1,53 @@
+<!-- Tab setings the tables changes  -->
+
+<style>
+    
+    /* row in form hiddent*/
+    
+    .formpanel:first-child .form:first-child .row:nth-child(3) {
+        display: none;
+    }
+
+    /*Change table */
+
+    table[name='1User_Table'],
+    table[name='2UserCompanies_Table'],
+    table[name='3Company_Table'] {
+        width: 100% !important;
+        text-align: left;
+    }
+
+    table[name='1User_Table'] td,
+    table[name='2UserCompanies_Table'] td,
+    table[name='3Company_Table'] td {
+        padding: 0 !important;
+    }
+
+
+    table[name='3Company_Table'] tr.selected>td,
+    table[name='3Company_Table'].zebra-stripes tr.selected:not(.action-row)>td {
+        background-color: #E3EFF2 !important;
+    }
+
+    table[name='2UserCompanies_Table'] tr.selected>td,
+    table[name='2UserCompanies_Table'].zebra-stripes tr.selected:not(.action-row)>td {
+        background-color: #E3EFF2 !important;
+    }
+
+    @media screen and (max-width: 925px) {
+        div[name='SPCabinet Area Item'] table td {
+            padding: 0 !important;
+        }
+
+        div[name='SPCabinet Area Item'] {
+            background-color: #FAFAFA;
+        }
+    }
+
+    div[name='SPCabinet Area Item'],
+    div[name='GetDocumentsList'] {
+        padding: 0 !important;
+        box-shadow: 0 0 0!important;
+    }
+
+</style>

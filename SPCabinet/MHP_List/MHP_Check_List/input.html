@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+        crossorigin="anonymous">
+    </script>
+
+
+
+    <style>
+        table.pantone {width: 100%; border-collapse: collapse;}
+        table.pantone td {padding: 0.6rem 1rem; color: #ffffff; font-weight: bold;}    
+    </style>
+    <!--
+    <style>
+        @media screen and (max-width: 800px) {
+                table.pantone td {display: block;}
+            }
+    </style>
+    -->
+
+    <style>
+    
+        @media screen and (max-width: 800px) {.grid-column-headers {display: none} .grid-content-table td {display: block; width: 100%; text-align: center; } .theme-entry .grid table.grid-content-table>tbody>tr, .theme-entry .grid table.grid-content-table>tr {cursor: default;height: 90px;display: block;width: 100vw; border: 4px double black} .theme-entry .grid .grid-content-cell { padding-left: 20px; } }
+    
+    </style>
+    
+    
+  
+
+</head>
+<body>
+
+    <label class="pure-material-textfield-outlined">
+        <input placeholder="">
+        <span>Text123</span>
+    </label>
+
+
+
+
+    <br><br><br> <br><br><br>
+
+    <table class='grid-content-table zebra-stripes'>
+        <tbody class="startonic">
+            <tr>
+                <td style="background-color: #d977a9;">asdsds</td>
+                <td style="background-color: #d3468f;">PANTONE 225</td>
+                <td style="background-color: #d70c7a;">PANTONE 226</td>
+                <td style="background-color: #af1c63;">PANTONE 227</td>
+                <td style="background-color: #8f2054;">PANTONE 228</td>
+                <td style="background-color: #6d2244;">PANTONE 229</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+    <script type="text/javascript">
+       $( document ).ready(function() {
+            console.log( "ready!" );
+        });        
+    </script>
+    
+
+    <!-- <script>
+        $(function (){
+            $("input[title='Input Lable']").each(function (){
+                $(this).blur(function() {
+                    $("lable[id='12']").remove();
+                        console.log("asd");
+                    }
+                );
+                $(this).click(function() {
+                        $(this).before("<lable id='12'>asd<br></lable>");
+                        console.log("asd");
+                    }
+                );
+            });
+        });
+       
+    </script>
+     -->
+
+    
+    <!-- <script>
+        $(function (){
+            $("input[title='Input Lable']").each(function (){
+                $(this).blur(function() {
+                    $("lable[id='12']").remove();
+                        console.log("asd");
+                    }
+                );
+                $(this).click(function() {
+                        $(this).before("<lable id='12'>asd<br></lable>");
+                        console.log("asd");
+                    }
+                );
+            });
+        });
+       
+    </script>
+    -->
+    <script>
+      //  $("head").append('<style>.pure-material-textfield-outlined {    --pure-material-safari-helper1: rgb(var(--pure-material-primary-rgb, 33, 150, 243));    position: relative;    display: inline-block;    padding-top: 6px;    font-family: var(--pure-material-font, "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system);    font-size: 16px;    line-height: 1.5;    overflow: hidden;}.pure-material-textfield-outlined > input,.pure-material-textfield-outlined > textarea {    box-sizing: border-box;    margin: 0;    border: solid 1px; /* Safari */    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);    border-top-color: transparent;    border-radius: 4px;    padding: 15px 13px 15px;    width: 100%;    height: inherit;    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);    background-color: transparent;    box-shadow: none; /* Firefox */    font-family: inherit;    font-size: inherit;    line-height: inherit;    caret-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));    transition: border 0.2s, box-shadow 0.2s;}/* Span */.pure-material-textfield-outlined > input + span,.pure-material-textfield-outlined > textarea + span {    position: absolute;    top: 0;    left: 0;    display: flex;    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);    width: 100%;    max-height: 100%;    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);    font-size: 75%;    line-height: 15px;    cursor: text;    transition: color 0.2s, font-size 0.2s, line-height 0.2s;}.pure-material-textfield-outlined > input + span::before,.pure-material-textfield-outlined > input + span::after,.pure-material-textfield-outlined > textarea + span::before,.pure-material-textfield-outlined > textarea + span::after {    content: "";    display: block;    box-sizing: border-box;    margin-top: 6px;    border-top: solid 1px;    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);    min-width: 10px;    height: 8px;    pointer-events: none;    box-shadow: inset 0 1px transparent;    transition: border-color 0.2s, box-shadow 0.2s;}.pure-material-textfield-outlined > input + span::before,.pure-material-textfield-outlined > textarea + span::before {    margin-right: 4px;    border-left: solid 1px transparent;    border-radius: 4px 0;}.pure-material-textfield-outlined > input + span::after,.pure-material-textfield-outlined > textarea + span::after {    flex-grow: 1;    margin-left: 4px;    border-right: solid 1px transparent;    border-radius: 0 4px;}/* Hover */.pure-material-textfield-outlined:hover > input,.pure-material-textfield-outlined:hover > textarea {    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);    border-top-color: transparent;}.pure-material-textfield-outlined:hover > input + span::before,.pure-material-textfield-outlined:hover > textarea + span::before,.pure-material-textfield-outlined:hover > input + span::after,.pure-material-textfield-outlined:hover > textarea + span::after {    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);}.pure-material-textfield-outlined:hover > input:not(:focus):placeholder-shown,.pure-material-textfield-outlined:hover > textarea:not(:focus):placeholder-shown {    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.87);}/* Placeholder-shown */.pure-material-textfield-outlined > input:not(:focus):placeholder-shown,.pure-material-textfield-outlined > textarea:not(:focus):placeholder-shown {    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.6);}.pure-material-textfield-outlined > input:not(:focus):placeholder-shown + span,.pure-material-textfield-outlined > textarea:not(:focus):placeholder-shown + span {    font-size: inherit;    line-height: 68px;}.pure-material-textfield-outlined > input:not(:focus):placeholder-shown + span::before,.pure-material-textfield-outlined > textarea:not(:focus):placeholder-shown + span::before,.pure-material-textfield-outlined > input:not(:focus):placeholder-shown + span::after,.pure-material-textfield-outlined > textarea:not(:focus):placeholder-shown + span::after {    border-top-color: transparent;}/* Focus */.pure-material-textfield-outlined > input:focus,.pure-material-textfield-outlined > textarea:focus {    border-color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));    border-top-color: transparent;    box-shadow: inset 1px 0 var(--pure-material-safari-helper1), inset -1px 0 var(--pure-material-safari-helper1), inset 0 -1px var(--pure-material-safari-helper1);    outline: none;}.pure-material-textfield-outlined > input:focus + span,.pure-material-textfield-outlined > textarea:focus + span {    color: rgb(var(--pure-material-primary-rgb, 33, 150, 243));}.pure-material-textfield-outlined > input:focus + span::before,.pure-material-textfield-outlined > input:focus + span::after,.pure-material-textfield-outlined > textarea:focus + span::before,.pure-material-textfield-outlined > textarea:focus + span::after {    border-top-color: var(--pure-material-safari-helper1) !important;    box-shadow: inset 0 1px var(--pure-material-safari-helper1);}/* Disabled */.pure-material-textfield-outlined > input:disabled,.pure-material-textfield-outlined > input:disabled + span,.pure-material-textfield-outlined > textarea:disabled,.pure-material-textfield-outlined > textarea:disabled + span {    border-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38) !important;    border-top-color: transparent !important;    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);    pointer-events: none;}.pure-material-textfield-outlined > input:disabled + span::before,.pure-material-textfield-outlined > input:disabled + span::after,.pure-material-textfield-outlined > textarea:disabled + span::before,.pure-material-textfield-outlined > textarea:disabled + span::after {    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38) !important;}.pure-material-textfield-outlined > input:disabled:placeholder-shown,.pure-material-textfield-outlined > input:disabled:placeholder-shown + span,.pure-material-textfield-outlined > textarea:disabled:placeholder-shown,.pure-material-textfield-outlined > textarea:disabled:placeholder-shown + span {    border-top-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38) !important;}.pure-material-textfield-outlined > input:disabled:placeholder-shown + span::before,.pure-material-textfield-outlined > input:disabled:placeholder-shown + span::after,.pure-material-textfield-outlined > textarea:disabled:placeholder-shown + span::before,.pure-material-textfield-outlined > textarea:disabled:placeholder-shown + span::after {    border-top-color: transparent !important;}    </style>')
+    </script> 
+
+    <script>
+        $("head").append("<style>@media screen and (max-width: 800px) {.grid-column-headers {display: none} .grid-content-table td {display: block; width: 100%; text-align: center;  } .theme-entry .grid table.grid-content-table>tbody>tr, .theme-entry .grid table.grid-content-table>tr {cursor: default;height: 100%;display: block;width: 100vw; border-top: 3px solid black; border-bottom: 1px solid black; } body.theme-entry, .theme-entry div, .theme-entry span, .theme-entry td, .theme-entry li, .theme-entry p, .theme-entry textarea, .theme-entry input[type=text], .theme-entry input.text, .theme-entry select, .theme-entry option { text-align: center; } }</style>");
+    </script>
+
+
+
+
+
+
+<!-- .theme-entry .grid table.grid-content-table>tbody>tr, .theme-entry .grid table.grid-content-table>tr {
+    cursor: default;
+    height: 90px;
+    display: block;
+    width: 100vw;
+    text-align: center; -->
+
+
+
+</body>
+</html>
+
+

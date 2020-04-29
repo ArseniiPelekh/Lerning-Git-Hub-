@@ -1,0 +1,116 @@
+<style>
+    /* main container */
+    .popup.dialog.confirmation-message.auto-scale-height.ui-draggable {
+      width: 720px !important;
+      box-sizing: border-box;
+      padding: 14px;
+    }
+    /* header */
+    .popup.dialog.confirmation-message.auto-scale-height.ui-draggable
+      .popup-header-text {
+      font-size: 20px;
+      font-weight: 600 !important;
+  
+      letter-spacing: 0.15px;
+      color: #0f3d5b;
+  
+      text-transform: none;
+    }
+    /* header container */
+    .popup.dialog.confirmation-message.auto-scale-height.ui-draggable
+      .popup-header {
+      border: none;
+    }
+    /* main message */
+    .popup.dialog.confirmation-message.auto-scale-height.ui-draggable
+      .popup-body {
+      font-size: 16px;
+      letter-spacing: 0.44px;
+      color: #000000de;
+  
+      margin-top: 16px;
+      margin-bottom: 24px;
+    }
+    /* footer with buttons */
+    .popup.dialog.confirmation-message.auto-scale-height.ui-draggable
+      .popup-footer-c {
+      display: inline-flex !important;
+      flex-direction: row-reverse !important;
+    }
+    /* footer container */
+    .popup.dialog.confirmation-message.auto-scale-height.ui-draggable
+      .popup-footer {
+      border: none;
+    }
+    /* buttons */
+    .popup.dialog.confirmation-message.auto-scale-height.ui-draggable
+      .SourceCode-Forms-Controls-Web-Button {
+      height: 36px;
+      background: #0f3d5b 0% 0% no-repeat padding-box;
+      box-shadow: 0px 1px 3px #00000033;
+      border: none;
+      border-radius: 4px;
+  
+      outline: none;
+  
+      text-align: left;
+      font-size: 14px;
+      letter-spacing: 0px;
+      color: #ffffff;
+  
+      box-sizing: border-box;
+      padding-top: 10px;
+      padding-bottom: 9px;
+      padding-left: 16px;
+      padding-right: 16px;
+  
+      margin-left: 24px;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    /* button cancel */
+    .popup.dialog.confirmation-message.auto-scale-height.ui-draggable
+      .popup-footer-c
+      :nth-child(2) {
+      background: none;
+      box-shadow: none;
+      border: none;
+  
+      outline: none;
+      font-weight: 600;
+      color: #0f3d5b;
+    }
+    /* button cancel click effect */
+    .popup.dialog.confirmation-message.auto-scale-height.ui-draggable
+      .popup-footer-c
+      :nth-child(2):active {
+      background: #e3eff2 0% 0% no-repeat padding-box;
+    }
+  </style>
+  
+  <script>
+    $(document).ready(function () {
+      $("a[name='btn_Delete']").click(function () {
+        $(
+          '.popup.dialog.confirmation-message.auto-scale-height.ui-draggable .popup-footer-c :nth-child(2)'
+        ).each(function () {
+          $(this).text('СКАСУВАТИ');
+        });
+        $(
+          '.popup.dialog.confirmation-message.auto-scale-height.ui-draggable .popup-footer-c :first-child'
+        ).text('ВИДАЛИТИ');
+  
+        $(
+          '.popup.dialog.confirmation-message.auto-scale-height.ui-draggable .popup-header-text'
+        ).text('Видалити обраний документ?');
+        $(
+          '.popup.dialog.confirmation-message.auto-scale-height.ui-draggable .popup-body'
+        ).text(
+          'Вибраний файл буде видаленно назавжди, його не можливо буде відновити'
+        );
+      });
+    });
+  </script>
+  

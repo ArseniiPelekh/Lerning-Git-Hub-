@@ -1,0 +1,144 @@
+<style>
+
+    /* Header Співробітники компанії */
+
+    div[name='SP_GetCompanyUsers_View'] {
+        box-shadow: 0 0 0 !important;
+    }
+
+    div[name='SP_GetCompanyUsers_View'] .grid-header .grid-header-text span {
+        font-size: 20px !important;
+        color: #0F3D5B !important;
+    }
+
+    div[name='SP_GetCompanyUsers_View'] .grid-header .grid-header-text {
+        border-bottom: solid 0 transparent;
+    }
+
+    div[name='SP_GetCompanyUsers_View'] .grid-header {
+        height: 35px;
+    }
+
+
+    /* Lsit */
+
+    div[name='SP_GetCompanyUsers_View'] .grid-body .grid-column-header-table tr {
+        background-color: white;
+    }
+
+    /* End */
+
+    @media screen and (min-width: 925px) {
+        div[name='SP_GetCompanyUsers_View'] .grid.with-header .grid-toolbars .toolbar-wrapper {
+            padding: .5rem !important;
+        }
+
+        div[name='SP_GetCompanyUsers_View'] .grid-body {
+            padding-left: 1rem!important;
+            padding-right: 1rem!important;
+        }
+    }
+
+    /* End */
+
+    @media screen and (max-width: 925px) {
+        /* backgraud-color: */
+
+        .theme-entry .grid table.grid-content-table {
+            background-color: #FAFAFA;
+        }
+
+        /* end */
+        .grid-column-headers {
+            display: none;
+        }
+
+        .grid-content-table td {
+            display: block;
+            width: 100%;
+        }
+
+        .theme-entry .grid table.grid-content-table>tbody>tr,
+        .theme-entry .grid table.grid-content-table>tr {
+
+            display: flex;
+            flex-flow: wrap;
+
+            cursor: default;
+            height: 100%;
+            width: 100vw;
+            border-radius: 4px;
+            margin-top: 8px;
+            border: 1px solid #E0E0E0;
+
+            background-color: white;
+        }
+    }
+</style>
+
+<style>
+
+    /* Change table columns to block */
+
+    @media screen and (max-width: 925px) {
+        div[name='SP_GetCompanyUsers_View'] .grid-body .grid-body-content tr td:nth-child(1) {
+            order: 1;
+        }
+
+        div[name='SP_GetCompanyUsers_View'] .grid-body .grid-body-content tr td:nth-child(1) .grid-content-cell-wrapper {
+            padding-bottom: 0;
+        }
+
+        div[name='SP_GetCompanyUsers_View'] .grid-body .grid-body-content tr td:nth-child(1) span {
+            order: 1;
+            color: #0F3D5B;
+            font-size: 16px;
+        }
+
+        div[name='SP_GetCompanyUsers_View'] .grid-body .grid-body-content tr td:nth-child(2) {
+            order: 2;
+        }
+
+        div[name='SP_GetCompanyUsers_View'] .grid-body .grid-body-content tr td:nth-child(2) .grid-content-cell-wrapper {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        div[name='SP_GetCompanyUsers_View'] .grid-body .grid-body-content tr td:nth-child(2) span {
+            order: 1;
+            color: #9E9E9E;
+            font-size: 14px;
+        }
+
+        div[name='SP_GetCompanyUsers_View'] .grid-body .grid-body-content tr td:nth-child(3) {
+            order: 3;
+        }
+
+        div[name='SP_GetCompanyUsers_View'] .grid-body .grid-body-content tr td:nth-child(3) .grid-content-cell-wrapper {
+            padding-top: 0;
+        }
+
+        div[name='SP_GetCompanyUsers_View'] .grid-body .grid-body-content tr td:nth-child(3) span {
+            order: 1;
+            font-size: 14px;
+        }
+
+        div[name='SP_GetCompanyUsers_View'] .grid-body .grid-body-content tr td:nth-child(4) {
+            order: 4;
+            display: none;
+        }
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+

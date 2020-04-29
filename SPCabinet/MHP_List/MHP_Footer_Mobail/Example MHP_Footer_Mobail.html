@@ -1,0 +1,196 @@
+<div name="Footer Mobail MHP" class="footerMobail">
+    <div class="blockDownMobail">
+        <span class="checkButtonBlock"><input type="checkbox" id="checkboxFooter"><label for="checkboxFooter"></label><a href="#" id="signButton" class="signButton">ПІДПИСАТИ</a></span><span class="actionsButtonSpan"><a href="#" id="saveButton" class="actionButton"></a><a href="#" id="printButton" class="actionButton"></a><a href="#" id="deleteButton" class="actionButton"></a></span>
+    </div>
+</div>
+
+<script>
+
+    
+    ($("#signButton").click(() => 
+        { $("a[name='btn_Sign']").click(); 
+    })); 
+    
+    ($("#deleteButton").click(() => 
+        { $("a[name='btn_Delete']").click(); 
+    }));
+    
+    const signButton = () => {
+        $("a[name='btn_Sign']").click();
+    }
+
+    const deleteButton = () => {
+        $("a[name='btn_Delete']").click();
+    }
+    
+    $("head").append("<style>.footerMobail {    display: block;    position: fixed;    height: 56px;    left: 0; bottom: 0;    padding: 10px!important;     color: #fff!important;     width: 100%;     background: #FFFFFF 0% 0% no-repeat padding-box;    box-shadow: 0px 0px 6px #00000029;    border: 1px solid #E0E0E0;    border-radius: 4px 4px 0px 0px;    opacity: 1;    align-items: center;    margin: 0;    padding: 0!important;}.footerMobail.hidden {    display: none;}.blockDownMobail{    position: relative;     width: 100%;    display: flex;}.checkButtonBlock input:checked {    background: #0F3D5B 0% 0% no-repeat padding-box;    opacity: 1;}#signButton {    font-size: 14px;    color: #fff;    padding: 10px 16px 9px;    text-decoration: none;    width: 24px;    height: 24px;    background: #0F3D5B 0% 0% no-repeat padding-box;    box-shadow: 0px 1px 3px #00000033;    border-radius: 4px;    opacity: 1;}a#signatureLink:hover{    background-color: #1C587A;}.checkButtonBlock{    width: 63%;    text-align: left;}.actionsButtonSpan {    width: 37%;    text-align: right;}.actionButton {    display: inline-block;    width: 24px;    height: 24px;}#deleteButton{        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAKlJREFUSEtjZKAxYKSx+QwDb0FBQYEAKyvrfgYGBgNk3/7///8DIyOjY3d39wV8oYDVB6Wlpf/JCbru7m4M8wbGAnJcj0sPzkgmNZiwBQ/I0oG3AJfLYEEC8ynZPhi1gGAkjwbRaBAxUJLRPjAwMPATU/D9////YU9PjwI2tTjjoKSkxIGBgWEBIyOjPD5LQIYzMDAk9PT0HCDJAmJcToyaga+TiXElPjUAK0h6GYXtoC0AAAAASUVORK5CYII=');    margin-right: 16px;}#printButton{    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAOFJREFUSEvVlcsNwjAQRMdR7qSEUAIdUAKd4EN8Rly9PkAHlEAnUELogA4WJZKRZRL5I5koPvqzb8ezXgsUHqJwfCwHUEpxijoimkx2VsHfAHOZWXU2kWwF6wFIKZu6rk9CiAOANsVgZ2/PzDdjzNnOfU1WSl0AHDMD+8euRCSHSRfwBrABsCOiZwqo67p9VVUNM/cAHgB6Itr6gLHuQ6ZOgYdKYuaXMab1q8pVkA2wCrTW92hA7kNbHuDfcciTOaX23I8HxQB+4FCPWU8vin1w2d20GCA2cGjfcn9yKLPY9Q/VO5gZFTaUYAAAAABJRU5ErkJggg==');    margin-right: 12px;}#saveButton {    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAQFJREFUSEvtldENgkAQRGcT9lutQDrQDtQS7MASMGGruEukBDuwBC3BFqxA/D4SzBo1gCAIMcHE+7qEu3mzc7uB8OVFX9ZHvwAikmrFxpjGxhofVOE/oLah/hG9RCQi0zRNN0mSLKMoirMRBUEw9DxvR0RrY8yxKt+3bSoiBwAzAEfn3IKZzyrknBsx8x6AGjhZa/1GgOIj3l0eiGiiEBW8Cz32FwDzRwVlTZCroOxAAZI1mhOvGsRagF4sgbyIdwIUIJr3M5ZsSa0iygpoJczsV3VNZ0DdqPcCEAMY1Dl99704F7kuCsNwDmBLROM2EBUHsLLW6oDe1kc/nDbQ3wdcAcjApxlnDyFKAAAAAElFTkSuQmCC');    margin-right: 12px;}#checkboxFooter {    display: none;}.checkButtonBlock #checkboxFooter + label {    background-image: none;}.checkButtonBlock #checkboxFooter + label::before {    content: '';    display: inline-block;    width: 25px;    height: 24px;    vertical-align: middle;    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAALJJREFUSEtjZKAxYKSx+Qz0tcA8KKXg7tsfvb///Wcix2fcbEx/ZPnZS0+umzMBph/FByL20f9+/6PMVyBLnu1dzIrVAn7b6P/kuBxdz8fDS+EOR/HBqAWwoBpBQYTsVXypCz1xEB1ENLeA3DxBtA9GLQCFwDArKkTso////kdu1EL0cbEy/n2+bwkL1uIaVOE8+vCj59vv/8zkWAMyXE6AowRnhUOOoYT00LdOJuQacuQBFDVmGWiHY2wAAAAASUVORK5CYII=');    margin: 1px 3.5% 0 22px;    opacity: 1;}  .checkButtonBlock #checkboxFooter:checked + label::before {    width: 25px;    height: 24px;    content: '';    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAATpJREFUSEtjZKAxYKSx+Qz0tcA8KKXg7tsfvb///Wcix2fcbEx/ZPnZS0+umzMBph/FByL20f9+/6PMVyBLnu1dzIrVAn7b6P/kuBxdz8fDS+EOR/EB2Rb8/3+QgZHRHmYRVS34z8Cw8NPhpQl8NlENjIyM9SBLqGYBzHCQoby2UQlMDIzzqWYBLsOJtwAtXJEjEp/hRFnwj+F/4ufDyxbw2UYvYGRgiCfFcKIs+M/wf8Gnw8sSQYqRLSHkcpJSEbolIM2g1IIeodjyDdGpCNkSmEHIqQVXpiTaApAByJYQYzhRcYDuMpAl/xkYDsLSOaHihCQfEDKMojggx3C8QSRiH/3/9z9yjYXo42Jl/Pt83xIWrMU1qMJ59OFHz7ff/5nJsQZkuJwARwnOCoccQwnpoW+dTMg15MgDAMDWtBmCQqmAAAAAAElFTkSuQmCC');}@media screen and (max-width: 925px) {    .footerMobail {        display: flex;        z-index: 1;       }    .checkButtonBlock #checkboxFooter + label::before {        margin: 1px 5.5% 0 1.1rem;      }    .actionsButtonSpan {        margin-right: 1.3rem;    }}@media screen and (min-width: 926px) {    .footerMobail {        display: block;        position: relative;        height: 25px;        left: 0; bottom: 0;        padding: 10px!important;         color: #fff!important;         width: 100%;         background: #FFFFFF 0% 0% no-repeat padding-box;        box-shadow: 0px 0px 6px #00000029;        border: 1px solid #E0E0E0;        border-radius: 4px 4px 0px 0px;        opacity: 1;        align-items: center;        margin: 0;    }    .footerMobail.hidden {        display: none;    }}</style>");
+    $("div[name='GetDocumentsList'] .grid-body").prepend("<div id='Footer Mobail MHP' class='footerMobail' style='display: none;'><div class='blockDownMobail'>    <span class='checkButtonBlock'><input type='checkbox' id='checkboxFooter'><label for='checkboxFooter'></label><a href='#' onclick='signButton()' id='signButton' class='signButton'>ПІДПИСАТИ</a></span><span class='actionsButtonSpan'><a href='#' id='saveButton' class='actionButton'></a><a href='#' id='printButton' class='actionButton'></a><a href='#' id='deleteButton' onclick='deleteButton()' class='actionButton'></a></span></div></div>");
+
+</script>
+
+
+<!-- this style should be the head  ( jquery ) -->
+<style>
+
+.footerMobail {
+    display: block;
+
+    position: fixed;
+    height: 56px;
+    left: 0; bottom: 0;
+    padding: 10px!important; 
+    color: #fff!important; 
+    width: 100%; 
+
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #00000029;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px 4px 0px 0px;
+    opacity: 1;
+
+
+    align-items: center;
+    margin: 0;
+    padding: 0!important;
+}
+
+.footerMobail.hidden {
+    display: none;
+}
+
+.blockDownMobail{
+    position: relative; 
+    width: 100%;
+    display: flex;
+}
+
+.checkButtonBlock input:checked {
+    background: #0F3D5B 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#signButton {
+    font-size: 14px;
+    color: #fff;
+    padding: 10px 16px 9px;
+    text-decoration: none;
+
+    width: 24px;
+    height: 24px;
+
+    background: #0F3D5B 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 3px #00000033;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+a#signatureLink:hover{
+    background-color: #1C587A;
+}
+
+.checkButtonBlock{
+    width: 63%;
+    text-align: left;
+}
+
+.actionsButtonSpan {
+    width: 37%;
+    text-align: right;
+}
+
+.actionButton {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+
+
+#deleteButton{
+    
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAKlJREFUSEtjZKAxYKSx+QwDb0FBQYEAKyvrfgYGBgNk3/7///8DIyOjY3d39wV8oYDVB6Wlpf/JCbru7m4M8wbGAnJcj0sPzkgmNZiwBQ/I0oG3AJfLYEEC8ynZPhi1gGAkjwbRaBAxUJLRPjAwMPATU/D9////YU9PjwI2tTjjoKSkxIGBgWEBIyOjPD5LQIYzMDAk9PT0HCDJAmJcToyaga+TiXElPjUAK0h6GYXtoC0AAAAASUVORK5CYII=");
+    margin-right: 16px;
+}
+
+#printButton{
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAOFJREFUSEvVlcsNwjAQRMdR7qSEUAIdUAKd4EN8Rly9PkAHlEAnUELogA4WJZKRZRL5I5koPvqzb8ezXgsUHqJwfCwHUEpxijoimkx2VsHfAHOZWXU2kWwF6wFIKZu6rk9CiAOANsVgZ2/PzDdjzNnOfU1WSl0AHDMD+8euRCSHSRfwBrABsCOiZwqo67p9VVUNM/cAHgB6Itr6gLHuQ6ZOgYdKYuaXMab1q8pVkA2wCrTW92hA7kNbHuDfcciTOaX23I8HxQB+4FCPWU8vin1w2d20GCA2cGjfcn9yKLPY9Q/VO5gZFTaUYAAAAABJRU5ErkJggg==");
+    margin-right: 12px;
+}
+
+#saveButton {
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAQFJREFUSEvtldENgkAQRGcT9lutQDrQDtQS7MASMGGruEukBDuwBC3BFqxA/D4SzBo1gCAIMcHE+7qEu3mzc7uB8OVFX9ZHvwAikmrFxpjGxhofVOE/oLah/hG9RCQi0zRNN0mSLKMoirMRBUEw9DxvR0RrY8yxKt+3bSoiBwAzAEfn3IKZzyrknBsx8x6AGjhZa/1GgOIj3l0eiGiiEBW8Cz32FwDzRwVlTZCroOxAAZI1mhOvGsRagF4sgbyIdwIUIJr3M5ZsSa0iygpoJczsV3VNZ0DdqPcCEAMY1Dl99704F7kuCsNwDmBLROM2EBUHsLLW6oDe1kc/nDbQ3wdcAcjApxlnDyFKAAAAAElFTkSuQmCC");
+    margin-right: 12px;
+}
+
+#checkboxFooter {
+    display: none;
+}
+
+.checkButtonBlock #checkboxFooter + label {
+    background-image: none;
+}
+
+.checkButtonBlock #checkboxFooter + label::before {
+
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 24px;
+    vertical-align: middle;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAALJJREFUSEtjZKAxYKSx+Qz0tcA8KKXg7tsfvb///Wcix2fcbEx/ZPnZS0+umzMBph/FByL20f9+/6PMVyBLnu1dzIrVAn7b6P/kuBxdz8fDS+EOR/HBqAWwoBpBQYTsVXypCz1xEB1ENLeA3DxBtA9GLQCFwDArKkTso////kdu1EL0cbEy/n2+bwkL1uIaVOE8+vCj59vv/8zkWAMyXE6AowRnhUOOoYT00LdOJuQacuQBFDVmGWiHY2wAAAAASUVORK5CYII=");
+    margin: 1px 3.5% 0 22px;
+    opacity: 1;
+}
+  
+.checkButtonBlock #checkboxFooter:checked + label::before {
+    width: 25px;
+    height: 24px;
+    content: '';
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAATpJREFUSEtjZKAxYKSx+Qz0tcA8KKXg7tsfvb///Wcix2fcbEx/ZPnZS0+umzMBph/FByL20f9+/6PMVyBLnu1dzIrVAn7b6P/kuBxdz8fDS+EOR/EB2Rb8/3+QgZHRHmYRVS34z8Cw8NPhpQl8NlENjIyM9SBLqGYBzHCQoby2UQlMDIzzqWYBLsOJtwAtXJEjEp/hRFnwj+F/4ufDyxbw2UYvYGRgiCfFcKIs+M/wf8Gnw8sSQYqRLSHkcpJSEbolIM2g1IIeodjyDdGpCNkSmEHIqQVXpiTaApAByJYQYzhRcYDuMpAl/xkYDsLSOaHihCQfEDKMojggx3C8QSRiH/3/9z9yjYXo42Jl/Pt83xIWrMU1qMJ59OFHz7ff/5nJsQZkuJwARwnOCoccQwnpoW+dTMg15MgDAMDWtBmCQqmAAAAAAElFTkSuQmCC");
+}
+
+@media screen and (max-width: 925px) {
+    .footerMobail {
+        display: flex;
+        z-index: 1;   
+    }
+
+    .checkButtonBlock #checkboxFooter + label::before {
+        margin: 1px 5.5% 0 1.1rem;  
+    }
+
+    .actionsButtonSpan {
+        margin-right: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 926px) {
+
+    .footerMobail {
+        display: block;
+
+        position: relative;
+        height: 25px;
+        left: 0; bottom: 0;
+        padding: 10px!important; 
+        color: #fff!important; 
+        width: 100%; 
+
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 0px 6px #00000029;
+        border: 1px solid #E0E0E0;
+        border-radius: 4px 4px 0px 0px;
+        opacity: 1;
+
+
+        align-items: center;
+
+        margin: 0;
+    }
+
+    .footerMobail.hidden {
+        display: none;
+    }
+}
+</style>
+

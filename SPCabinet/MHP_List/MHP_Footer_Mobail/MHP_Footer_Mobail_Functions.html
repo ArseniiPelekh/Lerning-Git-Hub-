@@ -1,0 +1,57 @@
+<script>
+    $(document).ready(function () {
+
+        const checkedAllInList = () => {
+
+            /* Add Event to bottun on Footer Mobail */
+
+            let checkboxFooter = ($("#checkboxFooter"));
+
+            ($(checkboxFooter).click(() => {
+
+                ($.each(($(".grid-content-table:first").find("tr")), (trIndex, trValue) => {
+                    if ($(checkboxFooter).is(":checked")) {
+                        if ($(trValue).find("label[class='input-control checkbox checked']").length == 0) {
+                            $(trValue).click();
+                        }
+                    } else {
+                        if ($(trValue).find("label[class='input-control checkbox checked']").length == 1) {
+                            $(trValue).click();
+                        }
+                    }
+                }));
+            }));
+        }
+
+        /* Change color in line list, when you click on it*/
+
+        const bindEventToSheetRows = () => {
+            $(".grid-content-table:first").click(() => {
+                $(".grid-content-table:first tr").each((trIndex, trValue) => {
+                    setTimeout(() => {
+                        if ($(trValue).find("label[class='input-control checkbox checked']").length !== 0) {
+                            $(trValue).css("background-color", "rgb(227, 239, 242)");
+                        } else {
+                            $(trValue).css("background-color", "white");
+                        }
+                    }, 10);
+                })
+
+                setTimeout(() => {
+                    if ($(".grid-content-table:first tr").find("label[class='input-control checkbox checked']").length === 0) {
+                            
+                            $("#footerMobailMHP").css("display", "none");
+
+                        return;
+                    }
+                    if($("#footerMobailMHP").css("display") === "none") {
+                        $("#footerMobailMHP").toggle('slow');
+                    }
+                }, 10);
+            });
+        }
+
+        bindEventToSheetRows();
+        checkedAllInList();
+    });
+</script>

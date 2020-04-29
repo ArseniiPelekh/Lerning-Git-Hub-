@@ -1,0 +1,80 @@
+<style>
+    /* Header Загальні налаштування*/
+
+    div[name='SP_UserInfo_View'] {
+        box-shadow: 0 0 0!important;
+    }
+    /* Change input*/
+    div[name='SP_UserInfo_View'] .pure-material-textfield-outlined {
+        margin-right: 1.6rem;
+
+        margin-top: 14px !important;
+    }
+
+    /* Change view header*/
+    div[name='SP_UserInfo_View'] .panel-header .panel-header-text span {
+        font-size: 20px !important;
+        color: #0F3D5B !important;
+    }
+
+    div[name='SP_UserInfo_View'] .panel-header-text {
+        border-bottom: transparent !important;
+    }
+    
+    @media screen and (min-width: 926px) {
+        div[name='SP_UserInfo_View'] .grid.with-header .grid-toolbars .toolbar-wrapper {
+            padding: .5rem !important;
+        }
+
+        div[name='SP_UserInfo_View'] .panel-body {
+            padding-left: 1rem!important;
+        }
+    }
+
+    /* cahnge button */
+    div[name='SP_UserInfo_View'] a[name='btnEdit'],
+    div[name='SP_UserInfo_View'] a[name='btnCancel'],
+    div[name='SP_UserInfo_View'] a[name='btnSave'] {
+        margin-right: 1.6rem;
+        margin-top: 14px !important;
+        font-size: 14px;
+        color: #fff !important;
+        padding: 10px 16px 9px !important;
+        text-decoration: none !important;
+        width: 318px;
+        min-height: 3.6rem !important;
+        background: #0F3D5B 0% 0% no-repeat padding-box !important;
+        box-shadow: 0px 1px 3px #00000033;
+        border-radius: 4px !important;
+        opacity: 1;
+
+        line-height: 10px !important;
+    }
+
+    /* Mobail */
+
+    @media screen and (max-width: 925px) {
+
+        div[name='SP_UserInfo_View'] .SFC.SourceCode-Forms-Controls-Web-Table tr {
+            text-align: center;
+        }
+
+        /* input*/
+        div[name='SP_UserInfo_View'] .pure-material-textfield-outlined {
+            margin-right: 0;
+            margin-bottom: 1.6rem;
+            margin-top: 0px !important;
+        }
+
+        /* cahnge button */
+        div[name='SP_UserInfo_View'] a[name='btnEdit'],
+        div[name='SP_UserInfo_View'] a[name='btnCancel'],
+        div[name='SP_UserInfo_View'] a[name='btnSave'] {
+            margin-top: 0px !important;
+
+            min-height: 3.6rem !important;
+            margin-bottom: 1.4rem!important;
+            margin-right: 0;
+        }
+    }
+</style>

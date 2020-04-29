@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="MHP_Check_List.css">
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+  
+        <style>
+            @media screen and (max-width: 800px) {
+                div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(1) {
+                    width: 15%;
+                    display: inline-block;
+                    padding-top: 2px;
+                    height: 56px;
+                }
+                div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(2) {
+                    width: 85%;
+                    display: inline-block;
+                    height: 56px;
+                }
+
+                div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(2) span {
+                    font-size: 24px;
+                }
+
+                div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(2) span, 
+                div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(2) .grid-content-cell-wrapper {
+                    padding-left: 0;
+                }
+                
+                div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(3), 
+                div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(4),
+                div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(5), 
+                div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(6) {
+                    display: none;
+                }
+            }
+        </style>
+
+
+        <style>
+            @media screen and (max-width: 800px) {
+                .grid-column-headers {
+                    display: none
+                }
+        
+                .grid-content-table td {
+                    display: block;
+                    width: 100%;
+                }
+        
+                .theme-entry .grid table.grid-content-table>tbody>tr,
+                .theme-entry .grid table.grid-content-table>tr {
+                    cursor: default;
+                    height: 100%;
+                    display: block;
+                    width: 100vw;
+                    border-radius: 4px;
+                    margin-top: 8px;
+                    border: 1px solid #E0E0E0;
+                }
+        
+                body.theme-entry,
+                .theme-entry div,
+                .theme-entry span,
+                .theme-entry td,
+                .theme-entry li,
+                .theme-entry p,
+                .theme-entry textarea,
+                .theme-entry input[type=text],
+                .theme-entry input.text,
+                .theme-entry select,
+                .theme-entry option {}
+            }
+        </style>
+
+
+<style>@media screen and (max-width: 800px) {div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(3), div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(4),div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(5), div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(6) {display: none;}}</style>
+    
+<script>
+ $("head").append("<style>@media screen and (max-width: 800px) {div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(3), div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(4),div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(5), div[name='GetDocumentsList'] .grid-body .grid-body-content tr td:nth-child(6) {display: none;}}</style>");
+</script>
+    </head>
+</head>
+<body>
+    <div name="goButton">    
+        <table border="1" class="border2">
+            <tr>
+                <td>text1</td>
+                <td>text2</td>
+                <td>text3</td>
+                <td>text4</td>
+                <td>text5</td>
+                <td>text6</td>
+                <td>text7</td>
+                <td>text8</td>
+            </tr>
+            <tr>
+                <td>text1</td>
+                <td>text2</td>
+                <td>text3</td>
+                <td>text4</td>
+                <td>text5</td>
+                <td>text6</td>
+                <td>text7</td>
+                <td>text8</td>
+            </tr>
+            <tr>
+                <td>text1</td>
+                <td>text2</td>
+                <td>text3</td>
+                <td>text4</td>
+                <td>text5</td>
+                <td>text6</td>
+                <td>text7</td>
+                <td>text8</td>
+            </tr>
+            <tr>
+                <td>text1</td>
+                <td>text2</td>
+                <td>text3</td>
+                <td>text4</td>
+                <td>text5</td>
+                <td>text6</td>
+                <td>text7</td>
+                <td>text8</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="table2">    
+        <table border="1" class="border2">
+            <tr><td>text1</td><td>text2</td><td>text3</td><td>text4</td><td>text5</td></tr>
+            <tr><td>text1</td><td>text2</td><td>text3</td><td>text4</td><td>text5</td></tr>
+            <tr><td>text1</td><td>text2</td><td>text3</td><td>text4</td><td>text5</td></tr>
+            <tr><td>text1</td><td>text2</td><td>text3</td><td>text4</td><td>text5</td></tr>
+            <tr><td>text1</td><td>text2</td><td>text3</td><td>text4</td><td>text5</td></tr>
+        </table>
+    </div>
+
+    <script>
+
+        const mobilePhoneWidth = '800';
+        const affectedTdIndexes = [2, 3, 4, 5];
+
+        const onWindowResize = () => {
+            adjustTableTds();
+        }
+
+        const adjustTableTds = () => {
+            const displayAfter = $(window).width() <= mobilePhoneWidth;
+            hideTdInListGridBody(displayAfter);
+        }
+
+        const hideTdInListGridBody = (displayAffter) => {
+            
+            $(".table1").find("tr").each((trIndex, trValue) => {
+
+                $(trValue).find("td").each((tdIndex, tdValue) => {
+                    if (affectedTdIndexes.indexOf(tdIndex) > -1) {
+                        displayAffter ?  $(tdValue).hide() :  $(tdValue).show();
+                    }
+                });
+            });
+        }
+
+        $(document).ready(onWindowResize);
+        $(window).resize(onWindowResize);
+        
+    
+    </script>
+
+<script>
+    
+    const mobilePhoneWidth = '800';
+    const affectedTdIndexes = [2, 3, 4, 5];
+
+    const hideTdInListGridBody = (displayAffter) => {
+
+        $(".grid-body:first").find("tr").each((trIndex, trValue) => {
+
+            $(trValue).find("td").each((tdIndex, tdValue) => {
+                if (affectedTdIndexes.indexOf(tdIndex) > -1) {
+                    displayAffter ? $(tdValue).hide() : $(tdValue).css("display", "table-cell");
+                }
+            });
+        });
+    }
+    
+    const adjustTableTds = () => {
+        const displayAfter = $(window).width() <= mobilePhoneWidth;
+        hideTdInListGridBody(displayAfter);
+    }
+
+    const onWindowResize = () => {
+        console.log("start");
+        adjustTableTds();
+    }
+        
+    $(document).ready(onWindowResize);
+    $(window).resize(onWindowResize);
+
+</script>
+    
+<script>
+
+</script>
+
+</body>
+</html>
+
+<script>
+
+
+
+    $(document).ready(function () {
+
+
+        function moveInterval() {
+
+            let intervalForSetEventToList = setInterval(bindEventToSheetRows, 200);
+
+            function bindEventToSheetRows() {
+
+                if ($(".grid-content-table:first").find(".first.center-align").length === 0) {
+                    console.log("0!");
+                } else {
+                    clearInterval(intervalForSetEventToList);
+                    $(".grid-content-table:first").find("tr").each((trIndex, trValue) => {
+                        $(trValue).click(() => {
+                            if ($(trValue).css("background-color") === "rgb(227, 239, 242)") {
+                                $(trValue).css("background-color", "rgba(0, 0, 0, 0)");
+                            } else {
+                                $(trValue).css("background-color", "rgb(227, 239, 242)");
+                            }
+                        });
+                    });
+                    console.log("ready!");
+                }
+            }
+        }
+
+        moveInterval()
+    });
+
+</script>
+<style>
+    .a {
+        background-color: black;
+        background-color: blue;
+    }
+</style>
+
+$(trValue).css("background-color", "#e3eff2");
+console.log($(trValue).css("background-color"));
